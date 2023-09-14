@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    font-family: montserrat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(221, 255, 0, 0.144);
+}
+#container{
+    padding: 20px;
+    width: 350px;
+    height: 90vh;
+    background-image: url("https://i.etsystatic.com/16109531/r/il/96cc96/2207271477/il_794xN.2207271477_rlr1.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    /* background:linear-gradient(rgb(226, 226, 226),rgb(185, 185, 185)); */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-row-gap: 15px;
+    box-shadow: 2px 1px 5px #817e7e;
+    border-radius: 10px;
+}
+.row1{
+    grid-column: span 4;
+    background-color: rgba(0, 0, 0, 0.399);
+    box-shadow: 1px 1px 5px #c4c0c0;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.row1>h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0px;
+    font-weight: 500;
+}
+
+ button img{
+    align-self: center;
+    background-color: blue;
+    background-color: transparent;
+    width: 90%;
+}
+
+input{
+    text-transform: uppercase;
+}
+.input-div{
+    box-shadow: 1px 1px 5px #c4c0c0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    justify-self: center;
+    width: 100%;
+    border-radius: 20px;
+    grid-column: span 4;
+    grid-row: span 2;
+    overflow: hidden;
+}
+#input1{
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    color: white;
+
+}
+#input2{
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    color: white;
+}
+.input{
+    text-align: right;
+    border: none;
+    width: 100%;
+    padding: 0 20px;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    color: white;
+}
+.row{
+    /* background-color: lightcoral; */
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 15px;
+}
+.row button{
+    /* background-color: #fff; */
+    font-size: 24px;
+    align-self: center;
+    justify-self: center;
+    /* width: 60%;*/
+    height: 100%; 
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    background: radial-gradient(black,black);
+    color: white;
+    box-shadow: 1px 1px 10px #5a5555;
+    
+}
+.row button:hover{
+    cursor: pointer;
+    background: radial-gradient(#303030,black);
+}
+.zero{
+    grid-column: span 2;
+    border-radius: 0px;
+}
